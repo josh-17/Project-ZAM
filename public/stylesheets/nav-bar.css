@@ -1,0 +1,64 @@
+header{
+    background-color: rgb(216, 218, 224);
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: rgb(33, 33, 34);
+    text-decoration: none;
+}
+
+/* av bar style */
+.navbar{
+    min-width: 70px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Logo style */
+.nav-logo .logo{
+    max-width: 100%;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-link{
+    transition: .5s ease;
+    
+}
+
+.nav-link:hover{
+    color: lightslategray;
+}
+
+/* hamburger button style */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(58, 58, 58);
+    margin: 5px auto;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    border-radius: 40px;
+}
+
+

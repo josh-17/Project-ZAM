@@ -1,0 +1,16 @@
+{
+  "name": "zam_project",
+  "version": "1.0.0",
+  "private":"true",
+  "description": "A simple e-comerce application.",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Joshua Siyame",
+  "license": "ISC"
+}

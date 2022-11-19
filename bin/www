@@ -1,0 +1,11 @@
+const app = require("../app");
+const routes = require("../routes/usr-routes");
+const http = require("http");
+
+
+// configure application ready to run
+app.use(routes);
+
+http.createServer(app).listen(app.get("port"), ()=>{
+    console.log("Server listening on"+" "+app.get("port"));
+});
