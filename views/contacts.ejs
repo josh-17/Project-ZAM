@@ -1,6 +1,69 @@
 <%- include("header") %>
-<h2>
-    Contacts coming soon!
-</h2>
+    <div id="contact-page">
+        <div class="address">
+            <section id="location">
+                <h3>Locations</h3>
+                <ol>
+                    <li class="location-item">Masaki, Dar-es-Salaam</li>
+                    <li class="location-item">HolidayIn, Posta</li>
+                </ol>
+            </section>
+            <section id="contacts">
+                <h3>Contacts</h3>
+                <ol>
+                    <li class="contacts-item">
+                        Tel: <a href="tel: +2557 XXX XXX XXX">+2557 XXX XXX XXX</a>
+                    </li>
+                    <li class="contacts-item">
+                        Phone: <a href="tel: +2556 XXX XXX XXX">+2556 XXX XXX XXX</a>
+                    </li>
+                </ol>
+            </section>
+            <section id="social">
+                <h3>Follow us</h3>
+                <ol>
+                    <li class="social-item">
+                        <a href="#">
+                            <img src="#" alt="facebook" class="social__icon">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#">
+                            <img src="twitter" alt="twitter" class="social__icon">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#">
+                            <img src="#" alt="instagram" class="social__icon">
+                        </a>
+                    </li>
+                </ol>
+            </section>
+        </div>
+        <div class="mail">
+            <div role="mail-form">
+                <form role="form" method="post" action="#">
+                    <input type="hidden" name="_csrf" value="<%= csrfToken %> ">
+                    <div class="form-group">
+                        <section class="form-sections">
+                            <label for="username">Name:</label>
+                            <input type="text" name="username" class="form-control">
+                        </section>
+                        <section class="form-sections">
+                            <label for="email">E-mail</label>
+                            <input type="text" name="email" class="form-control">
+                        </section>
+                        <section class="form-sections">
+                            <label for="inquery">How can we help you?</label>
+                            <textarea class="form-text-area" placeholder="type here"></textarea>
+                        </section>
+                        <section class="form-sections">
+                            <input type="submit" value="SUBMIT" class="submit-btn">
+                        </section>
 
-<%- include("footer") %>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include("footer") %>

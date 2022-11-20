@@ -1,5 +1,6 @@
 "use strict";
 const express = require("express");
+const csrfToken = require("csurf");
 
 // Router instance
 const router = express.Router();
@@ -24,7 +25,7 @@ router.get("/about", (req, res)=>{
 
 router.get("/contacts", (req, res)=>{
     const title = "Contacts";
-    res.render("contacts", {title: title});
+    res.render("contacts", {title: title, csrfToken: csrfToken()});
 });
 
 // export module

@@ -5,6 +5,7 @@ const bodyParser = require("body-parser")
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const logger = require("morgan");
+const csrf = require("csurf");
 const lusca = require("lusca");
 const flash = require("connect-flash");
 const http = require("http");
