@@ -1,0 +1,45 @@
+#contact-page{
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-evenly;
+    
+}
+
+
+/*Address styles */
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Form style for the enquiries */*
+.form-sections{
+    display: grid;
+}
+
+label{
+    margin: .5em 0;
+    font-weight: 500;
+}
+
+.form-control{
+    width: 205px;
+    height: 24px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+textarea{
+    height: 70px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.submit-btn{
+    margin: .5em 0;
+    height: 28px;
+    border-radius: 5px;
+}

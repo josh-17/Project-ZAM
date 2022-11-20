@@ -21,7 +21,7 @@
             </section>
             <section id="social">
                 <h3>Follow us</h3>
-                <ol>
+                <ol class="social">
                     <li class="social-item">
                         <a href="#">
                             <img src="#" alt="facebook" class="social__icon">
@@ -44,6 +44,7 @@
             <div role="mail-form">
                 <form role="form" method="post" action="#">
                     <input type="hidden" name="_csrf" value="<%= csrfToken %> ">
+                    <h3>Visit our place.</h3>
                     <div class="form-group">
                         <section class="form-sections">
                             <label for="username">Name:</label>
@@ -54,13 +55,12 @@
                             <input type="text" name="email" class="form-control">
                         </section>
                         <section class="form-sections">
-                            <label for="inquery">How can we help you?</label>
+                            <label for="enquery">How can we help you?</label>
                             <textarea class="form-text-area" placeholder="type here"></textarea>
                         </section>
                         <section class="form-sections">
                             <input type="submit" value="SUBMIT" class="submit-btn">
                         </section>
-
                     </div>
                 </form>
             </div>
